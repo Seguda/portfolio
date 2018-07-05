@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seha Gulnar Dalay</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="./project-shots/favicon.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Libre" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <main>
+        <header>
+            <h1>Seha Gulnar Dalay</h1>
+            <h2>Full Stack Developer</h2>
+        </header>
+
+        <container class='shelf'>
+
+
+            <div class='win'>
+                <img width="300" height="300" src="https://images.unsplash.com/photo-1494459940152-1e911caa8cc5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bd0cf528eb19048393247edc4fa38b6&auto=format&fit=crop&w=1600&q=60"
+                    alt="alt">
+            </div>
+            <div class='win'>
+
+                <img width="300" height="300" src="https://images.unsplash.com/photo-1522258079018-a20492fa3b7b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d0bb362d5262df9590cfd0c1575d5891&auto=format&fit=crop&w=800&q=60"
+                    alt="alt">
+
+            </div>
+
+
+            <!--ABOUT ME PIC-->
+
+            <div class='window'>
+                <a name='about-me' href='#'>
+                    <img width="300" height="300" src="https://images.unsplash.com/photo-1452457750107-cd084dce177d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0f6d2e287351f258bec47f3c058ba01&auto=format&fit=crop&w=800&q=60"
+                        alt="a">
+                    <h3>About Me</h3>
+                </a>
+            </div>
+
+            <!-- ABOUT ME -->
+
+            <div class='content hidden'>
+
+                <button class='close' aria-label="Close 'About Me' modal">&times;</button>
+
+                <div class='about-me'>
+                    <img src='./media/photo.jpg' alt='Photo of me.' class='photo' />
+                    <section class='words'>
+                        <p>
+                            The reason I got into programming in the begining was to be able to build my own things.
+                        </p>
+                        <p>
+                            Being able to build any idea you can think of is fascinating. This feeling for building, creating something out of nothing
+                            is what eventually set me off on a path to becoming a full-stack web developer.
+                        </p>
+                        <p>
+                            I am a full stack developer from Boston, I love developing apps with React and learning new tricks in CSS.
+                        </p>
+                        <p>
+                            I frequently use React/Redux, Node.js/Express, and MongoDB to build web applications. I enjoy the challenge of learning different
+                            technologies and am always looking for new things to add to the stack.
+                        </p>
+                        <p>
+                            I have a proven track record of learning languages/libraries in a short span of time and fully look forward to learning as
+                            much as possible as I help the development team.
+                        </p>
+                        <p>
+                            I would like to build something with you!
+                        </p>
+
+                    </section>
+                </div>
+            </div>
+            <!--- PROJECTS  -->
+            <div class='window1'>
+                <a name='projects' href='#'>
+                    <h3>Projects</h3>
+                </a>
+            </div>
+
+
+            <div class='content hidden' id='show-projects'>
+                <button class='close' aria-label="Close project modal">&times;</button>
+
+                <!-- ---- tripWe----- -->
+                <div class='projects'>
+
+                    <img class='project_img' src='./media/tripWe.png' alt='Landing Page'>
+
+                    <p>
+                        <span class='project-title'>tripWe</span> is a web application that simplifies the group travel planning process. The reason
+                        we created to solve the messy planning problem of creating a group trip. tripWe was a capstone project
+                        built by four people and we created multifaceted dashboard where users can add friends to trips,
+                        compare flight and hotel information, and plan activities. </p>
+
+                    <p>
+                        Technologies used:
+                        <strong>React / Redux</strong>,
+                        <strong>Postgres</strong>,
+                        <strong>Node</strong>,
+                        <strong>Sass</strong> and
+                        <strong>Heroku</strong> for hosting.
+                    </p>
+
+                    <section class='project-links'>
+                        <h4>
+                            <span class='project-title'>tripWe Links:</span>
+                        </h4>
+                        <p class='links'>
+
+                            <a class='link' target='_blank' href='https://tripwe.herokuapp.com/'>
+                                Live App
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/tripwe-client'>
+                                Client
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/tripwe-server'>
+                                Server
+                            </a>
+                        </p>
+                    </section>
+
+                </div>
+
+                <!-- ----Cookese----- -->
+                <div class='projects'>
+
+                    <img class='project_img' src='./media/Cookese.png' alt='Landing Page'>
+
+                    <p>
+                        <span class='project-title'>Cookese</span> teaches useful kitchen tools, allows users to track their progress over time and practice
+                        more frequently on unmastered tools.
+                    </p>
+                    <p>
+                        Cookese app utilizes a spaced repetition algorithm designed to adapt to users learning needs. If a user answers incorrectly,
+                        user will see it more often in review than a question answered correctly. Cookese was implemented
+                        using linked list data structure to store the questions (pictures) in the database. Once the user
+                        has submitted the right answer, the question will be pushed back into the queue and will be shown
+                        with the same frequency as other correctly answered tools.
+                    </p>
+
+                    <p>Technologies used:
+                        <strong>React</strong>,
+                        <strong>MongoDB</strong>,
+                        <strong>mLab</strong>,
+                        <strong>Node</strong>,
+                        <strong>Netlify</strong> and
+                        <strong>Heroku</strong> for hosting.</p>
+
+
+                    <section class='project-links'>
+                        <h4>
+                            <span class='project-title'>Cookese Links:</span>
+                        </h4>
+                        <p class='links'>
+
+                            <a class='link' target='_blank' href='https://ecstatic-hamilton-0a8f06.netlify.com/'>
+                                Live App
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/Sarah-Seha-Spaced-Repitition-App-Client'>
+                                Client
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/Sarah-Seha-Spaced-Repitition-App-Server'>
+                                Server
+                            </a>
+                        </p>
+                    </section>
+
+                </div>
+
+                <!-- ----Share Your Yummies----- -->
+                <div class='projects'>
+
+                    <img class='project_img' src='./media/ShareYourYummies.png' alt='Landing Page'>
+
+                    <p>
+                        <span class='project-title'>Share Your Yummies</span> is made to store recipes created by users. As a user you are able to create
+                        a recipe, add own recipe picture, search and view saved recipes. Landing page contains the instructions
+                        for the user so you have guided on how to use app.
+                    </p>
+
+                    <p>Technologies used:
+                        <strong>React</strong>,
+                        <strong>MongoDB</strong>,
+                        <strong>mLab</strong>,
+                        <strong>Node</strong>,and
+                        <strong>Netlify</strong> and
+                        <strong>Heroku</strong> for hosting.</p>
+
+                    <section class='project-links'>
+                        <h4>
+                            <span class='project-title'>Share Your Yummies Links: </span>
+                        </h4>
+                        <p class='links'>
+
+                            <a class='link' target='_blank' href='https://elastic-brown-9b73b0.netlify.com/recipes'>
+                                Live App
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/seha-recipes-client'>
+                                Client
+                            </a>
+
+                            <a class='link' target='_blank' href='https://github.com/thinkful-ei19/seha-recipes-server'>
+                                Server
+                            </a>
+                        </p>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <div class='win'>
+
+                <img width="300" height="300" src="https://images.unsplash.com/photo-1456990493443-0d0ee2a630cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c61ac03e9a7ee096b7357f7dee79d0e8&auto=format&fit=crop&w=800&q=60"
+                    alt="alt">
+
+            </div>
+            <div class='win'>
+                <img width="300" height="300" src="https://images.unsplash.com/photo-1494459940152-1e911caa8cc5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bd0cf528eb19048393247edc4fa38b6&auto=format&fit=crop&w=1600&q=60"
+                    alt="alt">
+            </div>
+
+
+            <div class='window1'>
+                <a name='contact' href='#'>
+                    <h3>Contact</h3>
+                </a>
+            </div>
+            <!--CONTACT-->
+
+            <div class='content hidden'>
+                <button class='close' aria-label="Close project modal">&times;</button>
+
+                <div class='contact-div'>
+                    <h3>Contact</h3>
+                    <p>I would love to be part of your team!</p>
+                    <p>If you’d like to know more or discuss any opportunities, please don’t hesitate to reach out.</p>
+                    <p>Seha Gulnar Dalay</p>
+                    <div class='icons'>
+                        <a href="mailto:sehagulnar@gmail.com?" class='contact'>
+                            <img src='./media/email.png' class='icon'>
+                            <p>Email Address</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/seha-gulnar-dalay-03073415/" target='_blank' class='contact'>
+                            <img src='./media/linkedIn.png' class='icon'>
+                            <p>LinkedIn</p>
+                        </a>
+
+                        <a href="https://github.com/seguda" target='_blank' class='contact'>
+                            <img src='./media/github.png' class='icon'>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://angel.co/seha-gulnar-dalay/" target='_blank' class='contact'>
+                            <img src='./media/angelist.png' class='icon'>
+                            <p>AngelList</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class='window1'>
+                <a name='pic2' href='#'>
+                    <img width="300" height="300" src="https://images.unsplash.com/photo-1440772578301-f68d7e44e041?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1dc628016bed32229673006963d05f93&auto=format&fit=crop&w=800&q=60"
+                        alt="a">
+                </a>
+            </div> -->
+
+
+
+            <!--RESUME PIC-->
+
+            <div class='window'>
+                <a name='resume' href='#'>
+                    <img width="300" height="300" src=" https://images.unsplash.com/photo-1506438352327-36e0db62bf21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=56f20b71b13fd8a32304737e0011292f&auto=format&fit=crop&w=1650&q=80"
+                        alt="a">
+
+                    <h3>Resume</h3>
+                </a>
+            </div>
+
+            <div class='content hidden'>
+                <button class='close' aria-label="Close project modal">&times;</button>
+
+                <!--RESUME -->
+                <div class='resume-div'>
+
+                    <p class='resume-link'>
+                        You can view an html version of my resume
+                        <a class='link' target='_blank' href='https://docs.google.com/document/d/16YMs1lEnGf_OteVi_zqM6xLkcREGKSUi0Rbr20fxOB0/edit?ts=5b39aadb#'>here.</a>
+                    </p>
+                    <p class='resume-link'>
+                        You can view a pdf version of my resume
+                        <a class='link' target='_blank' href='./media/SGD-resume.pdf'>here.</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </container>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type='text/javascript' src='index.js'></script>
+
+</body>
+
+</html>
