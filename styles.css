@@ -69,7 +69,7 @@ a:focus {
   color: whitesmoke;
 }
 
-.shelf {
+.landing {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -108,9 +108,9 @@ a:focus {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 300px;
-  height: 270px;
-  border: solid 15px whitesmoke;
+  width: 290px;
+  height: 280px;
+  /* border: solid 15px whitesmoke; */
   margin-top: 2.2em;
 }
 
@@ -319,7 +319,7 @@ a[name="resume"] h3 {
   .found {
     width: 100%;
     left: 5%;
-    top: 13em;
+    top: 11em;
   }
 
   .contact-div {
@@ -358,7 +358,7 @@ a[name="resume"] h3 {
     max-width: 1200px;
   } */
 
-  .shelf {
+  .landing {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -380,8 +380,8 @@ a[name="resume"] h3 {
   }
 
   .found {
-    padding-left: -2em;
-    padding-right: -2em;
+    padding-left: 3em;
+    padding-right: 3em;
   }
   .project-links {
     display: flex;
@@ -416,8 +416,8 @@ a[name="resume"] h3 {
   }
 
   .found {
-    width: 80%;
-    left: 10%;
+    width: 85%;
+    left: 7%;
   }
 }
 
