@@ -7,27 +7,37 @@ html {
 }
 
 main {
-  /* display: block;
+  display: block;
   padding: 1em 1em 150px;
   width: 100%;
-  height: 100%; */
-  color: rgb(57, 45, 150);
+  height: 100%;
+  color: rgb(14, 11, 32);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
   background-color: whitesmoke;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 4em;
-  margin-bottom: 0.5em;
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  letter-spacing: 14px;
+  padding: 0 1em 0 0;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-size: 3em; */
+  text-align: left;
+  /* margin-bottom: 0.5em; */
   text-shadow: 0.1em 0.1em 12px rgba(17, 17, 50, 0.25);
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5em;
-  padding: 0 0.5em 0.5em;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+  font-style: italic;
+  /* font-size: 1.5em; */
+  /* padding: 0 2em 1em 0; */
+  padding-bottom: 1em;
+  padding-right: 3em;
+  text-align: right;
   margin: 0;
   text-shadow: 0.1em 0.05em 12px rgba(17, 17, 50, 0.25);
 }
@@ -42,18 +52,21 @@ h4 {
 }
 
 header {
-  padding: 2em 2em 0 4em;
+  padding: 0 0 0 6em;
   text-align: center;
+
+  flex-flow: row wrap;
+  align-items: center;
   color: rgb(57, 45, 150);
 }
 
-a {
+/* a {
   text-decoration: none;
   color: whitesmoke;
-  height: 100%;
-  width: 110%;
+  height: 310px;
+  width: 300px;
   display: flex;
-}
+} */
 
 @media only screen {
   a {
@@ -74,7 +87,6 @@ a:focus {
   flex-direction: column;
   margin: auto;
   margin-bottom: 100px;
-
   align-items: center;
   width: 340px;
   height: 100%;
@@ -83,12 +95,17 @@ a:focus {
 .window {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   width: 300px;
   height: 300px;
   border: solid 13px whitesmoke;
-  /* margin-top: 1em; */
+
+  margin-bottom: 0.6em;
+  margin-top: 0.8em;
+  padding-top: 7em;
+  /*margin-right: 0.9em;
+  margin-left: 0.9em; */
 }
 
 .window1 {
@@ -96,29 +113,34 @@ a:focus {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 304px;
-  height: 304px;
-  /* margin-top: 1em; */
-
+  width: 320px;
+  height: 340px;
   border: solid 13px whitesmoke;
   box-shadow: 0.9em 1.2em 1em 1em rgba(17, 17, 50, 0.25) inset;
+  /* margin-left: 1.1em; */
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
 }
 .win {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 290px;
-  height: 280px;
-  /* border: solid 15px whitesmoke; */
-  margin-top: 2.2em;
+  width: 300px;
+  height: 300px;
+  border: solid 13px whitesmoke;
+  margin-top: 2em;
+
+  /* margin-bottom: 0.1em; */
+  /* margin-left: 0.7em;
+  margin-right: 0.7em; */
 }
 
 .hidden {
   display: none;
 }
 
-.found {
+.modal {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -128,10 +150,11 @@ a:focus {
   text-align: left;
   width: 100%;
   position: absolute;
-  top: 9em;
+  margin-top: -72px;
   left: 1%;
   z-index: 2;
   border-radius: 2px;
+  background: linear-gradient(rgba(101, 65, 134, 0.95), #9ce7f5);
 }
 
 .close {
@@ -150,9 +173,10 @@ a:focus {
 .photo {
   box-sizing: content-box;
   align-self: center;
-  width: 250px;
-  border: solid 16px #ecf8f1;
+  width: 300px;
+  border: solid 10px #ecf8f1;
   border-radius: 2px;
+  /* width: 50%; */
 }
 
 .projects {
@@ -195,13 +219,14 @@ a:focus {
 }
 
 img {
-  width: 290px;
-  height: 280px;
-  margin-bottom: 2px;
-  padding-left: 0.9em;
-  object-fit: cover;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
+  width: 300px;
+  height: 300px;
+
+  /* margin-bottom: 2px; */
+  /* padding-left: 0.9em; */
+  /* object-fit: cover; */
+  /* margin-left: 2.5px;
+  margin-right: 2.5px; */
 }
 .project_img {
   width: 100%;
@@ -228,17 +253,15 @@ img {
 
 .project-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 2em;
-  margin-top: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  margin-top: 1.3em;
+  justify-content: space-around;
 }
 
 .icon {
@@ -261,50 +284,63 @@ img {
 
 a[name] {
   color: rgb(72, 64, 133);
-  font-family: "Libre", sans-serif;
+  font-family: "Quattrocento", serif;
   font-weight: bold;
 }
 
 a[name="about-me"] {
   box-shadow: none;
+  text-decoration: none;
 }
 
 a[name="about-me"] h3 {
   position: relative;
-  top: 106px;
-  margin-left: -208px;
+  top: -200px;
+  margin-left: 10px;
   text-align: center;
   box-shadow: none;
+  /* justify-content: center; */
+  text-decoration: none;
 }
 
 a[name="projects"] {
-  margin-left: -48px;
-  height: 180px;
-  width: 144px;
+  /* margin-left: -48px; */
+  /* height: 180px;
+  width: 144px; */
+  box-shadow: none;
+  text-decoration: none;
 }
 a[name="projects"] h3 {
   position: relative;
-  margin-top: 36px;
-  left: 18px;
+  bottom: 85px;
+  left: -8px;
   text-align: center;
 }
 
+a[name="contact"] {
+  box-shadow: none;
+  text-decoration: none;
+}
 a[name="contact"] h3 {
-  margin-left: 74px;
-  margin-top: 110px;
+  position: relative;
+  left: -4px;
+  top: -90px;
   text-align: center;
+  text-decoration: none;
 }
 
 a[name="resume"] {
   box-shadow: none;
+  text-decoration: none;
 }
 
 a[name="resume"] h3 {
   position: relative;
-  margin-top: 113px;
-  margin-left: -194px;
+  top: -198px;
+  left: -18px;
   text-align: center;
   box-shadow: none;
+  justify-content: center;
 }
 
 /* MEDIA AT 640px */
@@ -316,7 +352,7 @@ a[name="resume"] h3 {
     border: solid 10px whitesmoke;
   }
 
-  .found {
+  .modal {
     width: 100%;
     left: 5%;
     top: 11em;
@@ -364,8 +400,8 @@ a[name="resume"] h3 {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    height: 640px;
+    width: 1300px;
+    height: 740px;
   }
 
   .window {
@@ -374,12 +410,12 @@ a[name="resume"] h3 {
     border: solid 10px whitesmoke;
   }
   .window1 {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     border: solid 10px whitesmoke;
   }
 
-  .found {
+  .modal {
     padding-left: 3em;
     padding-right: 3em;
   }
@@ -387,6 +423,13 @@ a[name="resume"] h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-top: 1.3em;
+    justify-content: space-between;
   }
   .github-repos a:first-child {
     margin-right: 2em;
@@ -415,9 +458,10 @@ a[name="resume"] h3 {
     display: flex;
   }
 
-  .found {
-    width: 85%;
-    left: 7%;
+  .modal {
+    width: 90%;
+    left: 4%;
+    right: 4%;
   }
 }
 
@@ -429,7 +473,7 @@ a[name="resume"] h3 {
     margin-bottom: 4em;
   } */
 
-  .found {
+  .modal {
     top: 15em;
     width: 70%;
     left: 15%;

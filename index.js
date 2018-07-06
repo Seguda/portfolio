@@ -3,30 +3,30 @@
 function windowListener() {
   $(".window").click(function(event) {
     event.stopPropagation();
-    if ($(".found")) {
-      $(".found").removeClass("found");
+    if ($(".modal")) {
+      $(".modal").removeClass("modal");
     }
     $(this)
       .next("div")
-      .toggleClass("found");
+      .toggleClass("modal");
   });
 }
 function windowListener1() {
   $(".window1").click(function(event) {
     event.stopPropagation();
-    if ($(".found")) {
-      $(".found").removeClass("found");
+    if ($(".modal")) {
+      $(".modal").removeClass("modal");
     }
     $(this)
       .next("div")
-      .toggleClass("found");
+      .toggleClass("modal");
   });
 }
 
 function closeModal() {
   $("html").click(function() {
-    if (!$(this).closest(".found").length) {
-      $(".found").removeClass("found");
+    if (!$(this).closest(".modal").length) {
+      $(".modal").removeClass("modal");
     }
   });
 
@@ -36,8 +36,8 @@ function closeModal() {
 
   $(".close").click(function() {
     $(this)
-      .closest(".found")
-      .removeClass("found");
+      .closest(".modal")
+      .removeClass("modal");
   });
 }
 
