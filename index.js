@@ -11,7 +11,7 @@ function windowListener() {
       .toggleClass("modal");
   });
 }
-function windowListener1() {
+function window1Listener() {
   $(".window1").click(function(event) {
     event.stopPropagation();
     if ($(".modal")) {
@@ -43,6 +43,6 @@ function closeModal() {
 
 $(() => {
   windowListener();
-  windowListener1();
+  window1Listener();
   closeModal();
 });

@@ -49,7 +49,6 @@ h4 {
 header {
   padding: 0 0 0 6em;
   text-align: center;
-
   flex-flow: row wrap;
   align-items: center;
   color: rgb(57, 45, 150);
@@ -224,14 +223,14 @@ img {
   text-decoration: underline;
 }
 
-.project-links {
+.project-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 2em;
   margin-top: 1.3em;
   justify-content: space-around;
@@ -383,20 +382,17 @@ a[name="resume"] h3 {
     padding-left: 3em;
     padding-right: 3em;
   }
-  .project-links {
+  .project-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
   }
   .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 2em;
     margin-top: 1.3em;
     justify-content: space-between;
-  }
-  .github-repos a:first-child {
-    margin-right: 2em;
   }
 
   .resume-link {
