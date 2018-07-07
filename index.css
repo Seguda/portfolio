@@ -21,7 +21,7 @@ h1 {
   font-family: "Playfair Display", serif;
   font-size: 3em;
   letter-spacing: 14px;
-  padding: 0 1em 0 0;
+
   text-align: left;
   text-shadow: 0.1em 0.1em 12px rgba(17, 17, 50, 0.25);
 }
@@ -31,7 +31,7 @@ h2 {
   letter-spacing: 3px;
   font-style: italic;
   padding-bottom: 1em;
-  padding-right: 3em;
+  padding-right: 1.9em;
   text-align: right;
   margin: 0;
   text-shadow: 0.1em 0.05em 12px rgba(17, 17, 50, 0.25);
@@ -42,12 +42,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 0.7em;
   margin-bottom: 0.25em;
 }
 
 header {
-  padding: 0 0 0 6em;
+  padding: 0 0 0 1.9em;
   text-align: center;
   flex-flow: row wrap;
   align-items: center;
@@ -124,11 +124,11 @@ a:focus {
   margin: auto;
   padding: 1em 1em;
   background-color: #91e0ee;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: left;
   width: 100%;
   position: absolute;
-  margin-top: -72px;
+  margin-top: 20px;
   left: 1%;
   z-index: 2;
   border-radius: 2px;
@@ -140,7 +140,7 @@ a:focus {
   align-self: flex-end;
   background: transparent;
   color: #ecf8f1;
-  font-size: 2em;
+  font-size: 1em;
   border: none;
 }
 
@@ -170,7 +170,7 @@ a:focus {
   flex-direction: column;
   margin: 0.2em auto 3em;
   max-width: 700px;
-  line-height: 2.2;
+  line-height: 1.2;
 }
 
 .contact-div {
