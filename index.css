@@ -185,11 +185,12 @@ a:focus {
 .resume-div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   border: solid 1px #ecf8f1;
   border-radius: 2px;
   padding: 2em 3em;
   margin: 1em auto 10em;
+  height: 500px;
 }
 
 .contact-div a {
